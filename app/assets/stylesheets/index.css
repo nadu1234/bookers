@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2,.input {
+  margin: 20px;
+}
+
+table {
+  margin: 25px;
+}
+
+.null td{
+  padding: 1px 5px;
+}
+
+strong {
+  margin-left: 15px ;
+}
+
+ul {
+  margin-left: 40px ;
+}

@@ -1,5 +1,7 @@
+<%= stylesheet_link_tag 'index', media: "all" %>
+
 <h2>Books</h2>
-<table>
+<table class="null">
   <tr>
     <th>Title</th>
     <th>Body</th>
@@ -19,6 +21,7 @@
 
 <h2>New book</h2>
 <!-- form_with部分 -->
+<div class="input">
 <% if @book.errors.any? %>
   <strong><%= @book.errors.count %>errors prohibited this book from being saved:</strong>
   <ul>
@@ -27,6 +30,7 @@
     <% end %>
   </ul>
 <% end %>
+<br>
 
 <%= form_with model: @book do |f| %>
   <label>Title</label><br>
@@ -37,3 +41,4 @@
 <br>
   <%= f.submit 'Create Book' %>
 <% end %>
+</div>

@@ -1,9 +1,17 @@
-
+<%= stylesheet_link_tag 'show', media: "all" %>
 
 <p><strong>Title:</strong><%= @book.title %></p>
 
 <p><strong>Body:</strong><%= @book.body %></p>
 
-<span>
-    <%= link_to "Edit", edit_book_path(@book.id) %>|<%= link_to 'Back', books_path %>
-</span>
+<ul>
+    <li>
+      <%= link_to "Edit", edit_book_path(@book.id) %>
+    </li>
+    <li>
+      |
+    </li>
+    <li>
+      <%= link_to 'Back', books_path %>
+    </li>
+</ul>
